@@ -44,3 +44,4 @@ TOTAL_FILENAME=total.csv
 1. Chỉ nên để giá trị `PATCH_SIZE` trong khoảng từ 100 đến 200, nhưng để ổn định nhất thì mình khuyên chỉ nên để 100 thôi, nó sẽ chạy xong sau một giấc ngủ trưa.
 2. Mình không đảm bảo thuật toán tìm SBD của mình là hoàn toàn chính xác, nên có bất kì sai sót gì thì có thể báo cho mình nhé. Cụ thể thì có bạn phát hiện ở mã tỉnh 35 dữ liệu mình crawl không đủ, mình đã crawl bằng tay và cập nhật lại ở link Google Drive.
 3. Trong quá trình chạy các bạn có thể bị chặn, cách duy nhất có lẽ là phải đổi địa chỉ IP thôi. Mình dùng WARP của Cloudflare, mỗi lần bị chặn thì chỉ cần vô `Preferences -> Connection -> Reset Encryption Keys` là được.
+4. Chỉ có TP.HCM (Mã tỉnh thành 02) là có đầy đủ họ tên, ngày tháng năm sinh, giới tính (do chỉ có TP.HCM cung cấp).
