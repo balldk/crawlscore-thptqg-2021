@@ -36,12 +36,12 @@ PATCH_DELAY=0.1
 OUTPUT_FOLDER=data
 TOTAL_FILENAME=total.csv
 ```
-- Vì nguồn data để crawl có cơ chế chống DOS, nên để hạn chế bị chặn thì chương trình chạy theo cơ chế crawl lần lượt theo từng patch với `PATCH_SIZE` là độ lớn của từng patch, `PATCH_DELAY` là thời gian chờ để crawl patch tiếp theo.
-- `OUTPUT_FOLDER` là tên thư mục dữ liệu được xuất ra.
-- `TOTAL_FILENAME` là tên tên file tổng hợp tất dữ liệu từ 64 tỉnh thành.
+- Vì nguồn data để crawl có cơ chế chống DOS, do đó để hạn chế bị chặn thì mình đã cho chương trình chạy theo cơ chế crawl lần lượt theo từng patch với `PATCH_SIZE` là độ lớn của từng patch, `PATCH_DELAY` là thời gian chờ để crawl patch tiếp theo.
+- `OUTPUT_FOLDER` là tên thư mục mà dữ liệu được xuất ra.
+- `TOTAL_FILENAME` là tên của file tổng hợp tất cả dữ liệu từ 64 tỉnh thành.
 
 ## Một số lưu ý nhỏ
-1. Chỉ nên để giá trị `PATCH_SIZE` trong khoảng từ 100 đến 200, nhưng để ổn định nhất thì mình khuyên chỉ nên để 100 thôi, nó sẽ chạy xong sau một giấc ngủ trưa.
-2. Mình không đảm bảo thuật toán tìm SBD của mình là hoàn toàn chính xác, nên có bất kì sai sót gì thì có thể báo cho mình nhé. Cụ thể thì có bạn phát hiện ở mã tỉnh 35 dữ liệu mình crawl không đủ, mình đã crawl bằng tay và cập nhật lại ở link Google Drive.
-3. Trong quá trình chạy các bạn có thể bị chặn, cách duy nhất có lẽ là phải đổi địa chỉ IP thôi. Mình dùng WARP của Cloudflare, mỗi lần bị chặn thì chỉ cần vô `Preferences -> Connection -> Reset Encryption Keys` là được.
-4. Chỉ có TP.HCM (Mã tỉnh thành 02) là có đầy đủ họ tên, ngày tháng năm sinh, giới tính (do chỉ có TP.HCM cung cấp).
+1. Chỉ có TP.HCM (Mã tỉnh thành 02) là có đầy đủ họ tên, ngày tháng năm sinh, giới tính (do chỉ có TP.HCM cung cấp).
+2. Chỉ nên để giá trị `PATCH_SIZE` trong khoảng từ 100 đến 200, nhưng để ổn định nhất thì mình khuyên chỉ nên để 100 thôi, nó sẽ chạy xong sau một giấc ngủ trưa.
+3. Mình không đảm bảo thuật toán tìm SBD của mình là hoàn toàn chính xác, nên có bất kì sai sót gì thì có thể báo cho mình nhé. Cụ thể thì có bạn phát hiện ở mã tỉnh 35 dữ liệu mình crawl không đủ, mình đã crawl bằng tay và cập nhật lại ở link Google Drive.
+4. Trong quá trình chạy các bạn có thể bị chặn, cách duy nhất có lẽ là phải đổi địa chỉ IP thôi. Mình dùng WARP của Cloudflare, mỗi lần bị chặn thì chỉ cần vô `Preferences -> Connection -> Reset Encryption Keys` là được.
