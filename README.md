@@ -15,7 +15,7 @@ Dữ liệu mẫu:<br><br>
 ## Cách dùng
 Tải Dependencies
 ```bash
-go mod vendor
+go mod download
 ```
 Chạy chương trình
 ```bash
